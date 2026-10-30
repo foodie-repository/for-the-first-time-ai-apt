@@ -6,9 +6,7 @@
 
 [『난생처음 AI × 부동산』 도서 소개 · YES24](https://www.yes24.com/product/goods/197068685)
 
-이 저장소는 책 **『AI 부동산 투자』**(정케빈·지피타쿠·푸디 공저)에 수록된 **38개 실습
-프롬프트**와 **AI 맞춤 지침 템플릿**의 원문을 담고 있습니다. 책을 읽으며 각 `.txt`를
-그대로 복사해 AI(챗GPT·클로드·제미나이 등)에 붙여 넣어 사용하세요.
+이 저장소는 책 **『AI 부동산 투자』**(정케빈·지피타쿠·푸디 공저)에 수록된 **38개 실습 프롬프트**와 **AI 맞춤 지침 템플릿**을 담고 있습니다. `prompts-txt/`에는 TXT 원본을 보존하고, `prompts-md/`에는 읽기·편집과 이후 개선을 위한 Markdown 버전을 정리합니다. 프롬프트를 복사해 AI(챗GPT·클로드·제미나이 등)에 붙여 넣어 사용하세요.
 
 > ⚠️ **꼭 읽어주세요 — ‘시점중립’ 사용법**
 >
@@ -20,34 +18,33 @@
 
 ## 사용법
 
-1. **먼저** `Chapter 01 AI 투자 비서 만들기/AI 맞춤 지침 템플릿.txt`을 AI 프로젝트(또는
-   제미나이 Gem)의 지침란에 붙여 넣고, `[대괄호]` 안을 내 정보로 바꿉니다.
-2. 각 챕터 폴더에서 해당 실습 `.txt` 전체를 복사해 새 대화창에 붙여 넣습니다.
+1. **먼저** `prompts-txt/Chapter 01 AI 투자 비서 만들기/AI 맞춤 지침 템플릿.txt` 또는 `prompts-md/`의 같은 챕터에 있는 지침 템플릿을 AI 프로젝트(또는 제미나이 Gem)의 지침란에 붙여 넣고, `[대괄호]` 안을 내 정보로 바꿉니다.
+2. 아래 챕터 목차에서 해당 실습을 찾아 `.txt` 전체 또는 `.md`의 제목 아래 본문을 복사해 새 대화창에 붙여 넣습니다.
 3. AI가 최신 데이터를 조회한 뒤 정해진 출력 형식으로 분석해 줍니다.
 4. 변수 표기 규칙은 [`docs/변수표기_규칙.md`](docs/변수표기_규칙.md)를 참고하세요.
 
-## Markdown 버전
+## 프롬프트 폴더 구성
 
-읽기와 편집에 편리한 Markdown 사본은 [`prompts/`](prompts/README.md)에 있습니다. 기존 챕터 구조를 유지하여 실습 38개와 AI 맞춤 지침 템플릿을 `.md` 파일로 정리했습니다. 각 파일의 제목 아래 본문을 복사하여 사용할 수 있습니다.
+두 폴더는 동일한 10개 챕터 구조로 구성되며, 각각 실습 38개와 AI 맞춤 지침 템플릿 1개를 담고 있습니다. 전체 Markdown 파일은 [Markdown 프롬프트 목차](prompts-md/README.md)에서 바로 찾아갈 수 있습니다.
 
-- **TXT 원본**: 루트의 `Chapter 01 …/`부터 `Chapter 10 …/`까지 기존 파일을 유지합니다.
-- **Markdown 사본**: `prompts/Chapter NN …/*.md`에서 확인하고 편집합니다. 제목·구역·목록·표의 서식을 정리했으며, 프롬프트 문구와 변수·예시는 유지했습니다.
-- 두 버전은 자동으로 동기화되지 않습니다. 이후 수정 시에는 원본과 사본 중 어느 쪽을 변경하는지 구분하세요.
+- **[`prompts-txt/`](prompts-txt/)**: 책의 TXT 원본을 보존합니다. 기존 챕터명·파일명·본문을 유지합니다.
+- **[`prompts-md/`](prompts-md/README.md)**: 제목·구역·목록·표를 Markdown으로 정리한 버전입니다. 앞으로 프롬프트를 개선하거나 확장할 때는 이 폴더에서 작업합니다.
+- 두 버전은 자동으로 동기화되지 않습니다. Markdown의 개선 내용을 TXT 원본에 자동 반영하지 않으며, 원본 보존과 이후 개선을 구분합니다.
 
 ## 목차 (10개 챕터 · 38실습 + 지침 템플릿)
 
-| 챕터 | 폴더 | 수록 |
-|---|---|---|
-| Chapter 01 | `Chapter 01 AI 투자 비서 만들기/` | AI 맞춤 지침 템플릿 |
-| Chapter 02 거시 경제 분석 | `Chapter 02 거시 경제 분석/` | 실습 01~03 |
-| Chapter 03 미시 경제 분석 | `Chapter 03 미시 경제 분석/` | 실습 04~06 |
-| Chapter 04 정책·세금 분석 | `Chapter 04 정책·세금 분석/` | 실습 07~09 |
-| Chapter 05 투자 전략 수립 | `Chapter 05 투자 전략 수립/` | 실습 10~14 |
-| Chapter 06 지역 분석 | `Chapter 06 지역 분석/` | 실습 15~21 |
-| Chapter 07 단지 분석 | `Chapter 07 단지 분석/` | 실습 22~25 |
-| Chapter 08 임장·의사 결정 | `Chapter 08 임장·의사 결정/` | 실습 26~28 |
-| Chapter 09 매수 실전(갈아타기) | `Chapter 09 매수 실전(갈아타기)/` | 실습 29~33 |
-| Chapter 10 매도 실전 | `Chapter 10 매도 실전/` | 실습 34~38 |
+| 챕터 | TXT 원본 | Markdown | 수록 |
+|---|---|---|---|
+| Chapter 01 AI 투자 비서 만들기 | [TXT](<prompts-txt/Chapter 01 AI 투자 비서 만들기/>) | [MD](<prompts-md/Chapter 01 AI 투자 비서 만들기/>) | AI 맞춤 지침 템플릿 |
+| Chapter 02 거시 경제 분석 | [TXT](<prompts-txt/Chapter 02 거시 경제 분석/>) | [MD](<prompts-md/Chapter 02 거시 경제 분석/>) | 실습 01~03 |
+| Chapter 03 미시 경제 분석 | [TXT](<prompts-txt/Chapter 03 미시 경제 분석/>) | [MD](<prompts-md/Chapter 03 미시 경제 분석/>) | 실습 04~06 |
+| Chapter 04 정책·세금 분석 | [TXT](<prompts-txt/Chapter 04 정책·세금 분석/>) | [MD](<prompts-md/Chapter 04 정책·세금 분석/>) | 실습 07~09 |
+| Chapter 05 투자 전략 수립 | [TXT](<prompts-txt/Chapter 05 투자 전략 수립/>) | [MD](<prompts-md/Chapter 05 투자 전략 수립/>) | 실습 10~14 |
+| Chapter 06 지역 분석 | [TXT](<prompts-txt/Chapter 06 지역 분석/>) | [MD](<prompts-md/Chapter 06 지역 분석/>) | 실습 15~21 |
+| Chapter 07 단지 분석 | [TXT](<prompts-txt/Chapter 07 단지 분석/>) | [MD](<prompts-md/Chapter 07 단지 분석/>) | 실습 22~25 |
+| Chapter 08 임장·의사 결정 | [TXT](<prompts-txt/Chapter 08 임장·의사 결정/>) | [MD](<prompts-md/Chapter 08 임장·의사 결정/>) | 실습 26~28 |
+| Chapter 09 매수 실전(갈아타기) | [TXT](<prompts-txt/Chapter 09 매수 실전(갈아타기)/>) | [MD](<prompts-md/Chapter 09 매수 실전(갈아타기)/>) | 실습 29~33 |
+| Chapter 10 매도 실전 | [TXT](<prompts-txt/Chapter 10 매도 실전/>) | [MD](<prompts-md/Chapter 10 매도 실전/>) | 실습 34~38 |
 
 ## 지원 AI
 
