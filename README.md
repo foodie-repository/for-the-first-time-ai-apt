@@ -6,7 +6,7 @@
 
 [『난생처음 AI × 부동산』 도서 소개 · YES24](https://www.yes24.com/product/goods/197068685)
 
-https://github.com/user-attachments/assets/75b3c059-d4f2-4d07-a0dc-8b28b49fd8d2
+https://github.com/user-attachments/assets/2f3022d9-1826-4a1a-a3d4-0517a9d5ead1
 
 이 저장소는 책 **『AI 부동산 투자』**(정케빈·지피타쿠·푸디 공저)에 수록된 **38개 실습 프롬프트**와 **AI 맞춤 지침 템플릿**을 담고 있습니다. `prompts-txt/`에는 TXT 원본을 보존하고, `prompts-md/`에는 읽기·편집과 이후 개선을 위한 Markdown 버전을 정리합니다. 프롬프트를 복사해 AI(챗GPT·클로드·제미나이 등)에 붙여 넣어 사용하세요.
 
